@@ -7,6 +7,7 @@
 ## **Integrantes**
 - **Renata Santos Macedo** — RA: **82315517**
 - **Guilherme dos Santos Pereira** — RA: **323220756**
+- **[https://github.com/luix-guxto](Luis Augusto Alves Rodrigues)** — RA: **1242023054**
 
 ## **Tema do Projeto**
 Refatoração de código legado aplicando princípios de **Clean Code** e implementação de pelo menos um **Design Pattern**.
