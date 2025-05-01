@@ -8,6 +8,7 @@
 - **Renata Santos Macedo** — RA: **82315517**
 - **Guilherme dos Santos Pereira** — RA: **323220756**
 - <a href="https://github.com/luix-guxto"><strong>Luis Augusto Alves Rodrigues</strong></a> — <strong>1242023054</strong>
+- **Enoque Emanuel Macedo** — RA: **122416422**
 
 ## **Tema do Projeto**
 Refatoração de código legado aplicando princípios de **Clean Code** e implementação de pelo menos um **Design Pattern**.
