@@ -5,9 +5,9 @@
 - **Adriano Costa Moura**
 
 ## **Integrantes**
-- **Renata Santos Macedo** — RA: **82315517**
-- **Guilherme dos Santos Pereira** — RA: **323220756**
-- <a href="https://github.com/luix-guxto"><strong>Luis Augusto Alves Rodrigues</strong></a> — <strong>1242023054</strong>
+- <a href="https://github.com/RenataSantosMacedo"><strong>Renata Santos Macedo</strong></a> — <strong>RA: 82315517</strong>
+- <a href="https://github.com/luix-guxto"><strong>Luis Augusto Alves Rodrigues</strong></a> — <strong>RA: 1242023054</strong>
+- <a href="https://github.com/Gui-Santos94"><strong>Guilherme dos Santos Pereira</strong></a> — <strong>RA: 323220756</strong>
 
 ## **Tema do Projeto**
 Refatoração de código legado aplicando princípios de **Clean Code** e implementação de pelo menos um **Design Pattern**.
