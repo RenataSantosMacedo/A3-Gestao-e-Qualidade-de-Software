@@ -2,7 +2,7 @@
 
 ## **Professores**
 - **Henrique Ruiz Poyatos Neto**
-- **Adriano Costa Moura**
+- **Magda**
 
 ## **Integrantes**
 - <a href="https://github.com/RenataSantosMacedo"><strong>Renata Santos Macedo</strong></a> — <strong>RA: 82315517</strong>
