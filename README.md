@@ -17,23 +17,23 @@ Refatoração de código legado aplicando princípios de **Clean Code** e implem
 Refatoração de um código-fonte legado com diversas más práticas de programação, com o objetivo de melhorar sua **legibilidade**, **manutenibilidade** e **eficiência**, sem alterar sua funcionalidade.
 
 ## **Código Escolhido**
-O código selecionado realiza o ....  
+<a href="https://github.com/sobolevn/python-code-disasters/blob/master/python/my_first_calculator.py"><strong>Repositório do código escolhido para fazer a refatoração</strong></a>
+O código `my_first_calculator.py` é uma calculadora simples que realiza operações básicas de **adição, subtração, multiplicação e divisão** com números inteiros de 0 a 50.  
 O código original apresentava problemas como:
-- 
-- 
-- 
-- 
+-REPETIÇÃO EXCESSIVA
+-FALTA DE MODULARIZAÇÃO
+-AUSÊNCIA DE TRATAMENTO DE EXCEÇÕES
+-USO DE NOMES NÃO DESCRITIVOS
+-AUSÊNCIA DE COMENTÁRIOS CLAROS E SIGNIFICATIVOS
+-ACOPLAMENTO ELEVADO
 
 ## **Alterações Realizadas**
-- **Refatoração para Programação Orientada a Objetos (POO)** ...
-- **Aplicação do Princípio Aberto/Fechado (Open/Closed Principle)** ...
-- **Implementação de um Design Pattern** ...
-- **Melhora na nomenclatura** ...
-- **Criação de testes unitários** ...
+A refatoração tornou o código mais organizado e fácil de expandir usando Programação Orientada a Objetos (POO). Criamos uma classe Calculadora para separar as operações e a interação com o usuário, o que facilita a adicionar novas operações sem alterar o código existente (Princípio Aberto/Fechado). Aplicamos o Strategy Pattern, permitindo alterar as operações dinamicamente. Também melhoramos os nomes das variáveis para torná-las mais descritivas e adicionamos testes unitários para garantir que o código funcione corretamente e não quebre no futuro.
 
 ## **Entregáveis**
-- **Código original e refatorado**
-- **Relatório de análise**
-- **Testes unitários**
-- **Apresentação em PDF**
+- **Código original:** <a href="https://github.com/RenataSantosMacedo/A3-Gestao-e-Qualidade-de-Software/blob/principal-dois/python/my_first_calculator.py"></a>
+- **Relatório de análise:** <a href="https://github.com/RenataSantosMacedo/A3-Gestao-e-Qualidade-de-Software/blob/principal-dois/python/01_codigo_original.md"></a>
+- **Código refatorado:**
+- **Testes unitários:**
+- **Apresentação em PDF:**
 
