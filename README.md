@@ -2,7 +2,7 @@
 
 ## **Professores**
 - **Henrique Ruiz Poyatos Neto**
-- **Magda**
+- **Magda Aparecida Silverio Miyashiro**
 
 ## **Integrantes**
 - <a href="https://github.com/RenataSantosMacedo"><strong>Renata Santos Macedo</strong></a> — <strong>RA: 82315517</strong>
