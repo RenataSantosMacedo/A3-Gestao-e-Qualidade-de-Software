@@ -189,4 +189,9 @@ def executar_calculo(num1, operador, num2):
     resultado = calcular(operador, num1, num2)
     print(f"O resultado de {num1} {operador} {num2} é {resultado}")
 ```
+___
+
+**Por que Python?**
+Escolhemos um código em Python para refatorar e manteremos a refatoração na mesma linguagem por ser uma linguagem de sintaxe clara e fácil de ler, o que facilita a identificação e correção de problemas. Além disso, Python possui uma biblioteca padrão extensa, suporte a múltiplos paradigmas, ferramentas integradas para testes e uma comunidade ativa, garantindo acesso a soluções prontas e boa documentação. Manter a refatoração em Python também evita problemas de compatibilidade e facilita a manutenção do código.
+
 
