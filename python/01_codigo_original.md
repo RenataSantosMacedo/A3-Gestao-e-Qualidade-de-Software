@@ -192,6 +192,6 @@ def executar_calculo(num1, operador, num2):
 ___
 
 **Por que Python?**
-Escolhemos um código em Python para refatorar e manteremos a refatoração na mesma linguagem por ser uma linguagem de sintaxe clara e fácil de ler, o que facilita a identificação e correção de problemas. Além disso, Python possui uma biblioteca padrão extensa, suporte a múltiplos paradigmas, ferramentas integradas para testes e uma comunidade ativa, garantindo acesso a soluções prontas e boa documentação. Manter a refatoração em Python também evita problemas de compatibilidade e facilita a manutenção do código.
+Optamos por usar Python para fazer a refatoração e continuaremos trabalhando na mesma linguagem pois ela possui uma sintaxe clara e fácil de entender. Isso ajuda a identificar e corrigir problemas mais rapidamente. Além disso, a linguagem Python conta com uma biblioteca padrão bastante completa, oferece suporte a diferentes estilos de programação, possui ferramentas integradas para testes e uma comunidade bastante ativa. Tudo isso garante acesso a soluções prontas e uma boa documentação. Manter a refatoração em Python também evita problemas de compatibilidade e torna a manutenção do código mais simples.
 
 
