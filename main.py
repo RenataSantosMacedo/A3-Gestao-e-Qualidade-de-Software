@@ -1,5 +1,3 @@
-# main.py
-
 from ui.calculator_ui import CalculatorUI
 
 def main():
