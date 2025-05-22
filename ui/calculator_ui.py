@@ -34,7 +34,7 @@ class CalculatorUI:
             self.window.grid_columnconfigure(i, weight=1)
 
     def on_button_click(self, value):
-        self.calculator.add_input(value)
+        self.calculator.input(value)
 
     def _clear_display(self):
         self.display.delete(0, tk.END)
