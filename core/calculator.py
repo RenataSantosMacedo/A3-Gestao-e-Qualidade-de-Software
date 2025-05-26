@@ -17,7 +17,14 @@ class Calculator:
             self.onError = False
             self.clear_expression()
         if(value == '='):
-            self.evaluate_expression()
+            if self.can_evaluate():
+                result = self.evaluate_expression()
+                if self.isSquareRoot:
+                    self.isSquareRoot = False
+                if result == "Error":
+                    self.onError = True
+                self.expression = result
+                self.on_display_update(self.expression)
         elif(value == 'C'):
             self.clear_expression()
         elif(value == '<-'):
@@ -102,27 +109,24 @@ class Calculator:
         return True
         
     def can_evaluate(self):
-        if len(self.expression) == 0:
+        if len(self.expression) == 0 or self.onError or self.expression is None or self.expression == '':
             return False
-        if self.expression[len(self.expression) - 1] in allOperators:
+        if self.expression[len(self.expression) - 1] in allOperators or self.expression[len(self.expression) - 1] == '.':
+            return False
+        if not any(c in self.expression for c in allOperators):
             return False
         else:
             return True
 
     def evaluate_expression(self):
-        if self.can_evaluate():
-            try:
-                self.expression = self.expression.replace('^', '**')
-                if self.isSquareRoot:
-                    self.expression = self.expression.replace('√', '')
-                result = eval(self.expression)
-                if self.isSquareRoot:
-                    result = math.sqrt(result)
-                    self.isSquareRoot = False
-                self.expression = str(result)
-                self.on_display_update(self.expression)
-            except Exception as e:
-                print(e)
-                self.expression = "Error"
-                self.onError = True
-                self.on_display_update(self.expression)
+        try:
+            self.expression = self.expression.replace('^', '**')
+            if self.isSquareRoot:
+                self.expression = self.expression.replace('√', '')
+            result = eval(self.expression)
+            if self.isSquareRoot:
+                result = math.sqrt(result)
+            return str(result)
+        except Exception as e:
+            print(e)
+            return "Error"

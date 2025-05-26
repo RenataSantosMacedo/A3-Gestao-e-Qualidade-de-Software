@@ -13,7 +13,7 @@ class CalculatorUI:
         self.create_widgets()
 
     def create_widgets(self):
-        self.display = tk.Entry(self.window, font=(FONT, 20), borderwidth=3, relief="ridge", justify='right')
+        self.display = tk.Entry(self.window, font=(FONT, 20), state='readonly', borderwidth=3, relief="ridge", justify='right')
         self.display.grid(row=0, column=0, columnspan=4, sticky="nsew", padx=10, pady=10)
 
         buttons = [
@@ -37,11 +37,15 @@ class CalculatorUI:
         self.calculator.input(value)
 
     def _clear_display(self):
+        self.display.config(state='normal')
         self.display.delete(0, tk.END)
+        self.display.config(state='readonly')
 
     def _update_display(self, value):
+        self.display.config(state='normal')
         self.display.delete(0, tk.END)
         self.display.insert(tk.END, value)
+        self.display.config(state='readonly')
 
     def run(self):
         self.window.mainloop()
