@@ -1,7 +1,8 @@
 primaryOperators = ['+', '-']
-secondaryOperators = ['*', '/', '√', '^']
+secondaryOperators = ['*', '/','√', '^']
 allOperators = primaryOperators + secondaryOperators
 
+import math 
 class Calculator:
     def __init__(self, on_display_update, on_display_clear):
         self.expression = ""
@@ -9,6 +10,7 @@ class Calculator:
         self.onError = False
         self.on_display_update = on_display_update
         self.on_display_clear = on_display_clear
+        self.isSquareRoot = False
 
     def input(self, value: str):
         if self.onError:
@@ -30,7 +32,10 @@ class Calculator:
 
     def backspace(self):
         if len(self.expression) > 0:
-            if self.onDecimal and self.expression[len(self.expression) - 1] == '.':
+            if self.expression[len(self.expression) - 1] == '√':
+                self.isSquareRoot = False
+                self.expression = self.expression[:-1]
+            elif self.onDecimal and self.expression[len(self.expression) - 1] == '.':
                 if self.expression[len(self.expression) - 2] == '0':
                     self.expression = self.expression[:-2]
                 else:
@@ -54,6 +59,9 @@ class Calculator:
         if len(self.expression) == 0:
             if value == '0':
                 return False
+            elif value == '√':
+                self.isSquareRoot = True
+                return True
             elif value in secondaryOperators:
                 return False
             elif value == '.':
@@ -63,23 +71,27 @@ class Calculator:
             else:
                 return True
         else:
+            if value == '√':
+                return False
             if self.expression[len(self.expression) - 1] == '.' and value in allOperators:
                 return False
             if self.onDecimal and value == '.':
                 return False
-            elif value in secondaryOperators:
+            if value in secondaryOperators:
                 if self.expression[len(self.expression) - 1] in allOperators:
                     return False
                 else:
                     self.onDecimal = False
                     return True
-            elif value in primaryOperators:
+            if value in primaryOperators:
+                if self.expression[len(self.expression) - 1] == '√':
+                    return True
                 if self.expression[len(self.expression) - 2] in allOperators and self.expression[len(self.expression) - 1] in allOperators:
                     return False
                 else:
                     self.onDecimal = False
                     return True
-            elif value == '.':
+            if value == '.':
                 if self.onDecimal:
                     return False
                 else:
@@ -89,22 +101,24 @@ class Calculator:
                     return True                
         return True
         
-
-        
-
-
-
     def can_evaluate(self):
-        try:
-            eval(self.expression)
-            return True
-        except:
+        if len(self.expression) == 0:
             return False
+        if self.expression[len(self.expression) - 1] in allOperators:
+            return False
+        else:
+            return True
 
     def evaluate_expression(self):
         if self.can_evaluate():
             try:
+                self.expression = self.expression.replace('^', '**')
+                if self.isSquareRoot:
+                    self.expression = self.expression.replace('√', '')
                 result = eval(self.expression)
+                if self.isSquareRoot:
+                    result = math.sqrt(result)
+                    self.isSquareRoot = False
                 self.expression = str(result)
                 self.on_display_update(self.expression)
             except Exception as e:
