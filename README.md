@@ -34,6 +34,6 @@ A refatoração tornou o código mais organizado e fácil de expandir usando Pro
 - **Código original:** <a href="https://github.com/RenataSantosMacedo/A3-Gestao-e-Qualidade-de-Software/blob/principal-dois/python/my_first_calculator.py">my_first_calculator.py</a>
 - **Relatório de análise:** <a href="https://github.com/RenataSantosMacedo/A3-Gestao-e-Qualidade-de-Software/blob/principal-dois/python/01_codigo_original.md">Análise 01_codigo_original.md</a>
 - **Código refatorado:**
-- **Testes unitários:** <a href="https://github.com/RenataSantosMacedo/A3-Gestao-e-Qualidade-de-Software/blob/main/tests/test_calculator.py">
+- **Testes unitários:** <a href="https://github.com/RenataSantosMacedo/A3-Gestao-e-Qualidade-de-Software/blob/main/tests/test_calculator.py">Testes Unitários test_calculator.py</a>
 - **Apresentação em PDF:**
 
